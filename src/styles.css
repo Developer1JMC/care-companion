@@ -3,7 +3,7 @@ html{
     color: rgb(65, 102, 9);
     font-weight: 500;
 }
-@media screen and (max-width: 570px){
+@media screen and (max-width:620px){
     .about{
         display: flex;
         flex-direction: column;
