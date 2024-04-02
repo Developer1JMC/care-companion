@@ -3,6 +3,12 @@ html{
     color: rgb(65, 102, 9);
     font-weight: 500;
 }
+#flex-box{
+    display:flex;
+}
+.divide{
+    width: 50%;
+}
 @media screen and (max-width:620px){
     .about{
         display: flex;
@@ -226,11 +232,12 @@ h6{font-size: 1rem;}
     height: 16px;
 }
 #write{
-    margin-top: 10px;
     background-color: rgb(111, 247, 111);
     border: 1px solid rgb(111, 247, 111);
     height: 30px;
     border-radius: 5px;
+    width: 90%;
+
 }
 #submit{
     color: rgb(0, 0, 0);

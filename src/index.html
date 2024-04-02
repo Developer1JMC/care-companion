@@ -50,15 +50,15 @@
     <div class="about">
         <div class="bigbox">
             <h2>What we offer</h2>
-                <ul id="list">
-                    <li><img src="Check.png" class="check-mark" alt="check">help with medication</li>
-                    <li><img src="Check.png" class="check-mark" alt="check">help with cooking</li>
-                    <li><img src="Check.png" class="check-mark" alt="check">help with de-cluttering</li>
-                    <li><img src="Check.png" class="check-mark" alt="check">help with shopping</li>
-                    <li><img src="Check.png" class="check-mark" alt="check">help with travel/driving</li>
-                </ul>
-            </div>
-            <img src="tree.png" alt="old people" height="300">
+            <ul id="list">
+                <li><img src="Check.png" class="check-mark" alt="check">help with medication</li>
+                <li><img src="Check.png" class="check-mark" alt="check">help with cooking</li>
+                <li><img src="Check.png" class="check-mark" alt="check">help with de-cluttering</li>
+                <li><img src="Check.png" class="check-mark" alt="check">help with shopping</li>
+                <li><img src="Check.png" class="check-mark" alt="check">help with travel/driving</li>
+            </ul>
+        </div>
+        <img src="tree.png" alt="old people" height="300">
     </div>
 
     <div class="biggerbox">
@@ -160,13 +160,15 @@
         <div id="application">
             <h2>Communicate with Us!</h2>
             <form id="application-form">
-                <div>
-                    <label for="name">Full Name</label><br>
-                    <input type="text" id="write" name="Full Name" required placeholder="Applicant Name">
-                </div>
-                <div>
-                    <label for="Email">Email</label><br>
-                    <input type="text" id="write" name="Email" required placeholder="identity@example.com">
+                <div id="flex-box">
+                    <div class="divide">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="write" name="Full Name" required placeholder="Applicant Name">
+                    </div>
+                    <div class="divide">
+                        <label for="Email">Email</label>
+                        <input type="text" id="write" name="Email" required placeholder="identity@example.com">
+                    </div>
                 </div>
                 <div>
                     <select id="position" name="Position applied" required>
