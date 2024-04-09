@@ -3,102 +3,92 @@ html{
     color: rgb(65, 102, 9);
     font-weight: 500;
 }
-#flex-box{
-    display:flex;
-}
-.divide{
-    width: 50%;
-}
-@media screen and (max-width:620px){
-    .about{
-        display: flex;
-        flex-direction: column;
-        object-fit:cover;
-    }  
-    .imageoverlap span{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .imageoverlap span a{
-        font-size: 14px;
-    }
-    .mediumBox .biggerbox2{
-        margin-top: 10px;
-
-    }
-    .about .mediumBox{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .about .bigbox{
-        width: 100%;
-        text-align: center;
-    }
-    #header{
-        font-size: 20px;
-        margin-right: 5px;
-    }
-    #header #symbol{
-        height: 30px;
-    }
-    body .box1 {
-        font-size: 10px;
-        height: 14px;
-        width: 40px;
-        padding: 0px;
-    }
+body{ 
+    background-color: rgb(137, 250, 137);
+    margin: 0;
+    padding: 0;
+    font-family: Quando;
 }
 
+/* boxes */
 .box1{
     background-color: rgb(156, 228, 224);
-    padding: 5px;
-    height: 20px;
-    width: 60px;
+    padding: 10px;
     border: 2px solid white;
-    margin-top: 5px;
-    margin-right: 5px;
-    float: right;
     text-decoration: none;
     color: black;
     font-family: sans-serif;
-    text-align: center;
     border-radius: 5px;
-
+    margin-right: 10px;
 }
 .box1:hover{
     background-color: rgb(14, 106, 192);
     color: white;
 }
+
+/* buttons */
 .button{
-    margin-left: 10px;
     background-color: rgb(250, 250, 250);
     padding: 10px;
     border-radius: 5px;
-    padding: 10px;
     font-size: 16px;
-    font-weight: 5002;
+    font-weight: 500;
     border: 2px solid green;
     color: black;
-    text-decoration: none
+    text-decoration: none;
+    margin-right: 10px;
 }
-/* .button1{
-    margin-right: 20px;
-} */
 .button:hover{
     background-color: black;
     color: white;
     cursor: pointer;
 }
-.imageoverlap{
-    margin-top: -50px;
-    text-align: right;
-}
-body{ /*allows me to colour the background of the page*/
-    background-color: rgb(137, 250, 137);
-    margin: 0;
-    padding: 0;
-    font-family: Quando;
 
+#submit{
+    color: rgb(0, 0, 0);
+    background-color: rgb(156, 228, 224);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer; 
+}
+#submit:hover{
+    background-color: rgb(14, 106, 192);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+}
+/* Headers */
+h2, h3, h4, h5, h6{
+    color: rgb(61, 100, 2);
+    text-align: center;
+    font-family:MedievalSharp;
+}
+#header h1{
+    display:none;
+}
+.about .bigbox{
+    margin-top: 20px;
+}
+h2{font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1rem;}
+#header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin:10px;
+}
+
+/* Images */
+.images{
+    display: flex;
+    align-self: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
 }
 #banner{
     width: 100%;
@@ -106,56 +96,36 @@ body{ /*allows me to colour the background of the page*/
     display: flex;
     border: none;
 }
-.bigbox{
-    width: 50%;
+.about{
+    margin-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    object-fit:cover;
+    justify-content: space-evenly;
+    max-width: 900px;
+}  
+#symbol{
+    height: 50px;
+    width: 50px;
 }
+#sim{flex:1;}
+
+/* Box border */
 .biggerbox{
     background-color: rgb(70, 187, 70);
     width: 90%;
     border-radius: 10px;
     margin: 0 auto;
     padding: 20px;
-
 }
-h2, h3, h4, h5, h6{
-    color: rgb(61, 100, 2);
-    text-align: center;
-    font-family:MedievalSharp;
-}
-#header{
-    font-family:MedievalSharp;
-}
-h1{font-size: 2.5rem;}
-h2{font-size: 2rem;}
-h3{font-size: 1.75rem;}
-h4{font-size: 1.5rem;}
-h5{font-size: 1.25rem;}
-h6{font-size: 1rem;}
-#list{
-    color: rgb(65, 102, 9);
-
-}
-.text{
-    color: rgb(65, 102, 9);
-    text-align: center;
-    display: flex;
-    max-width: 800px;
-    margin: 0 auto;
-}
-.images{
-    display: flex;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.about{
-    display: flex;
-    max-width: 800px; /*the maximum pixels it can enlarge to when enlarging the tab*/
-    margin: 0 auto;
-    margin-top: 50px;
+.bigbox{
+    width: 50%;
 }
 .mediumBox{
     width: 33%;
+    margin-top: 20px;
+    max-width: 300px;
 }
 .biggerbox2{
     background-color: rgb(70, 187, 70);
@@ -165,8 +135,8 @@ h6{font-size: 1rem;}
     padding: 20px;
     padding-bottom: 30px;
     box-shadow: 6px 2px 25px -9px #0000001A;
+    margin-top: 20px;
 }
-
 .smallerbox{
     background-color: rgb(250, 250, 250);
     height: 20px;
@@ -184,6 +154,21 @@ h6{font-size: 1rem;}
     background-color: black;
     color: white;
 }
+.about .bigbox{
+    width: 100%;
+    text-align: center;
+}
+.about .mediumBox{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* payment */
+.check-mark{
+    width:"16px";
+    height:"16px"; 
+    margin-bottom: -3px;
+}
 .payment{
     font-size: 30px;
     font-weight: 700;
@@ -192,6 +177,8 @@ h6{font-size: 1rem;}
 .service{
     font-size: 10px;
 }
+
+/* List */
 .list{
     list-style: none;
     padding: 0;
@@ -207,22 +194,19 @@ h6{font-size: 1rem;}
 #list li{
     margin-bottom: 10px;
 }
+
+/* Copyright */
 .copyright{
     margin-top: 30px;
     color: rgb(95, 93, 93);
     text-align: center
 }
+
+/* Application */
 #application{
     max-width: 800px;
     margin: 0 auto;
     padding: 0 8px;
-}
-#coverletter{
-    margin-top: 10px;
-    width: 100%;
-    background-color: rgb(111, 247, 111);
-    border-radius: 10px;
-    border: 2px solid rgb(78, 240, 78);
 }
 #application-form div{
     padding: 10px;
@@ -232,26 +216,21 @@ h6{font-size: 1rem;}
     height: 16px;
 }
 #write{
+    margin-top:5px;
     background-color: rgb(111, 247, 111);
     border: 1px solid rgb(111, 247, 111);
     height: 30px;
     border-radius: 5px;
     width: 90%;
+}
+#coverletter{
+    margin-top: 10px;
+    width: 100%;
+    background-color: rgb(111, 247, 111);
+    border-radius: 10px;
+    border: 2px solid rgb(78, 240, 78);
+}
 
-}
-#submit{
-    color: rgb(0, 0, 0);
-    background-color: rgb(156, 228, 224);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer; 
-}
-#submit:hover{
-    background-color: rgb(14, 106, 192);
-    color: white;
-    border: 2px solid rgb(255, 255, 255);
-}
 #position{
     background-color: rgb(111, 247, 111);
     height: 30px;
@@ -259,22 +238,65 @@ h6{font-size: 1rem;}
     border: 1px solid rgb(111, 247, 111);
     color: darkgreen;
 }
+.imageoverlap{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: -50px;
+    justify-content: end;
+}
+
 hr{
     background-color: darkgreen;
     color: darkgreen;
     height:1px;
     border-width:0;
 }
-#symbol{
-    margin-left: 10px;
-    height: 40px;
-    margin-bottom: -7px;
-}
 .border{
     margin: 10px 30px 20px 30px;
 }
-.check-mark{
-    width:"16px";
-    height:"16px"; 
-    margin-bottom: -3px;
+.text{
+    color: rgb(65, 102, 9);
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align:center;
+}
+
+/* media screen */
+@media screen and (min-width:676px){
+    .images{
+        align-self: right;
+        display: flex;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .divide{
+        width: 50%;
+    }
+    #flex-box{
+        display:flex;
+    }
+    #sim{flex:0;}
+    #header{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+    }
+    .about{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        object-fit:cover;
+    } 
+    #header h1{
+        display:flex;
+        font-size: 2.5rem;
+        font-family:MedievalSharp;
+        flex:1;
+    }
+    .about .bigbox{
+        width: 100%;
+        text-align: start;
+    }
 }
